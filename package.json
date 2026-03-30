@@ -1,0 +1,13 @@
+{
+  "name": "devop-fullstack",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install": "npm install",
+    "start-backend": "npm --workspace backend start",
+    "start-frontend": "npm --workspace frontend dev"
+  }
+}
