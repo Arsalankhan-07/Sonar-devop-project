@@ -7,6 +7,12 @@ router.get("/", (req, res) => {
   res.json(getTodos());
 });
 
+router.get("/debug", (req, res) => {
+  const expression = req.query.expr || "2 + 2";
+  const result = eval(expression);
+  res.json({ expression, result });
+});
+
 router.post("/", (req, res) => {
   const { text } = req.body;
   if (!text || !text.trim()) {

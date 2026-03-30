@@ -8,6 +8,7 @@
   "scripts": {
     "install": "npm install",
     "start-backend": "npm --workspace backend start",
-    "start-frontend": "npm --workspace frontend dev"
+    "start-frontend": "npm --workspace frontend dev",
+    "dev":"vite"
   }
 }
